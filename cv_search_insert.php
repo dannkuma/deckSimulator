@@ -9,6 +9,6 @@ if(isset($_SESSION['cv_search'][$_REQUEST['id']])) {
     ];
 }
 
-header('Location: http://localhost//decksimulator/cv_search_output.php');
+header('Location:https://dannkmamemame.com/cv_search_output.php');
 exit();
 ?>

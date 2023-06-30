@@ -1,0 +1,312 @@
+
+html {
+    width: 800px;
+    margin: 0 auto;
+    background-color: rgba(2, 2, 2, 0.766);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 387px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+    width: 325px;
+    display: flex;
+    border: 0.5px solid gray;
+    border-radius: 2px;
+}
+
+ul p {
+    font-size: 12px;
+    color: rgb(71, 70, 70);
+    font-weight: 550;
+}
+
+li {
+    width: 40.8px;
+    border: 0.5px solid gray;
+    /* margin-top: -0.5px; */
+    /* margin-bottom: -0.5px; */
+    margin-right: -0.5px;
+}
+
+.preview_wrap {
+    width: 100%;
+    background-color: #DCCFBC;
+    border: 0.5px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.preview_total_cost {
+    width: 170px;
+    text-align: center;
+    margin: 0 auto;
+    border: 2px double gray;
+    /* border-top-left-radius: 30px; */
+    /*要素の左上角にborder-radius30pxを指定*/
+    border-top-right-radius: 10px;
+    /*要素の右上角にborder-radius90pxを指定*/
+    /* border-bottom-right-radius: 30px; */
+    /*要素の右下角にborder-radius30pxを指定*/
+    border-bottom-left-radius: 10px;
+    /*要素の左下角にborder-radius90pxを指定*/
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: rgb(71, 70, 70);
+}
+
+.total_cost_val {
+    color: rgb(196, 2, 2);
+}
+
+.preview_main_content_wrap {
+    width: 100%;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+}
+
+.preview_deck_list_header {
+    width: 30px;
+    writing-mode: vertical-rl;
+    border: 2px double gray;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    color: rgb(71, 70, 70);
+    float: left;
+}
+
+/* 後で消す */
+.preview_general_image_wrap {
+    font-size: 8px;
+    width: 100%;
+    height: 63px;
+}
+
+.preview_general_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preview_general_list_content {
+    display: flex;
+    width: 100%;
+    height: 120px;
+}
+
+.preview_general_period {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.preview_general_period span {
+    white-space: nowrap;
+    transform: scale(0.7);
+}
+
+.preview_general_list_more_unit,
+.preview_general_list_name_wrap {
+    width: 50%;
+    text-align: center;
+    padding-top: 2px;
+}
+
+.preview_solder_icon {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.preview_solder_icon img {
+    width: 18.5px;
+    height: 18.5px;
+}
+
+.preview_general_list_special_skill {
+    width: 100%;
+    margin-top: 2px;
+}
+
+.preview_special_skill {
+    font-size: 10px;
+    width: 80%;
+    margin: 0 auto;
+    border: 0.5px solid gray;
+    border-radius: 1px;
+    margin-bottom: 1px;
+    background-color: black;
+    color: white;
+    border-bottom-right-radius: 8px;
+}
+
+.preview_general_list_name_wrap {
+    display: flex;
+}
+
+.preview_general_list_name {
+    width: 95%;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.preview_general_cost img {
+    width: 100%;
+}
+
+.preview_param_wrap {
+    width: 100%;
+    display: flex;
+    border-top: 1px solid gray;
+}
+
+.preview_power,
+.preview_intelligence {
+    width: 50%;
+    height: 18px;
+    text-align: center;
+}
+
+.preview_power {
+    background-color: black;
+    color: white;
+}
+
+.preview_total_cost_wrap,
+.total_param_wrap {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.middle_block {
+    width: 48%;
+}
+
+.middle_block p {
+    font-size: 12px;
+    text-align: right;
+    color: #AF2F3B;
+    font-weight: 700;
+}
+
+.block_header {
+    font-size: 14px;
+    color: rgb(71, 70, 70);
+    display: flex;
+    align-items: center;
+}
+
+.block_header::after {
+    content: "";
+    flex-grow: 1;
+    display: block;
+    height: 1px;
+    background: #333;
+    margin-left: 0.5rem;
+}
+
+.preview_special_skill_header {
+    font-size: 14px;
+    color: rgb(71, 70, 70);
+    display: flex;
+    align-items: center;
+}
+
+.preview_special_skill_header::after {
+    content: "";
+    flex-grow: 1;
+    display: block;
+    height: 1px;
+    background: #333;
+    margin-left: 0.5rem;
+
+}
+
+.total_special_skill_wrap p {
+    font-size: 12px;
+}
+
+.preview_count_skill {
+    display: flex;
+    justify-content: left;
+    border-bottom: 0.2px dotted rgb(71, 70, 70);
+    padding-bottom: 5px;
+}
+
+.count_skill_wrap {
+    width: 32%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.count_skill_block {
+    width: 30px;
+    text-align: center;
+    height: 18px;
+    line-height: 18px;
+    border: 1.7px solid black;
+    border-radius: 4px;
+    background-color: #DDCBA8;
+}
+
+.count_skill_unit {
+    color: #AF2F3B;
+    font-weight: 700;
+    height: 14px;
+    align-self: flex-end;
+    font-size: 14px;
+}
+
+.count_span {
+    color: black;
+    font-size: 10px;
+}
+
+.preview_skill {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5px;
+}
+
+.skill_wrap {
+    width: 32%;
+    display: flex;
+}
+
+.skill_block {
+    width: 30px;
+    text-align: center;
+    height: 18px;
+    line-height: 18px;
+    border: 1.7px solid black;
+    border-radius: 4px;
+    background-color: #DDCBA8;
+}
+
+.skill_unit {
+    color: #AF2F3B;
+    font-weight: 700;
+    height: 14px;
+    align-self: flex-end;
+    font-size: 14px;
+}

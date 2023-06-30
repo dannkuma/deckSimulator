@@ -13,9 +13,13 @@ ul {
 }
 
 html {
-    width: fit-content;
     margin: 0 auto;
+    background-image: url('img/background/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% auto;
 }
+
 
 .wrap {
     margin: 0 30px 50px;
@@ -49,8 +53,7 @@ button:hover {
 }
 
 body {
-    background-color: #99ccff;
-    max-width: 960px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -469,10 +472,14 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    position: relative;
 }
 
-.stratagem p {
+.stratagem a {
     font-size: 0.85rem;
+    position: absolute;
+    top: 10px;
+    z-index: 6;
 }
 
 .btn_cover {
@@ -501,7 +508,7 @@ body {
     display: inline-block;
     width: 40%;
     height: 25px;
-    border: 3px solid black;
+    border: 1px solid black;
     border-radius: 10px;
     position: relative;
     z-index: 6;
@@ -522,68 +529,53 @@ body {
 }
 
 .favorite_wrapper {
-    width: 1100px;
+    width: 650px;
     font-size: 60px;
 }
 
+
 .general_detail_background {
-    width: 1150px;
-    height: auto;
+    height: 100%;
     padding-bottom: 20px;
     background-color: #192f60;
 }
 
 .general_detail_header {
     color: white;
-    height: 200px;
-    text-align: center;
-    line-height: 200px;
-    font-size: 65px;
+    width: 650px;
+    height: 100px;
     position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 auto;
 }
 
-.detail_header_text {
-    width: 550px;
-    height: 100px;
-    float: left;
-    text-align: center;
-    line-height: 100px;
+.detail_header_text, .illustration_header_text, .cv_header_text, .stratagem_header_text 
+{
+    width: 350px;
+    height: 65px;
     border: 0.5px solid #fdd35c;
     border-radius: 8px;
-    font-size: 60px;
-    position: absolute;
-    top:60px;
-    left: 300px;
     background-color: #001e43;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 85px;
 }
 
-.detail_close {
-    margin-top: 60px;
-    margin-right: 25px;
+.illustration_header_text, .cv_header_text {
+    width: 500px;
+    margin-right: 20px;
 }
 
-.stratagem_header_text {
-    width: 700px;
-    height: 100px;
-    float: left;
-    text-align: center;
-    line-height: 100px;
-    border: 0.5px solid #f8f4e6;
-    border-radius: 8px;
-    font-size: 60px;
-    position: absolute;
-    top:60px;
-    left: 223px;
-    background-color: #001e43;
+.stratagem_header_text  {
+    font-size: 1.65rem;
 }
 
 .stratagem_name {
     text-align: center;
-}
-
-.stratagem_close {
-    margin-top: 60px;
-    margin-right: 20px;
 }
 
 .close {
@@ -611,6 +603,16 @@ body {
     box-shadow: none;
 }
 
+.detail_close, .illustration_close, .cv_close, .stratagem_close {
+    width: 65px;
+    height: 65px;
+    font-size: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
 .stratagem_search_btn {
     color: #0099cc;
     height: 35px;
@@ -624,16 +626,16 @@ body {
     margin-bottom: 25px;
 }
 
-.detail_two_sides {
-    width: 800px;
-}
-
 .creator_wrapper {
-    height: 100px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .detail_link {
-    width: 540px;
+    width: 40%;
     transition: all 0.5s;
     box-shadow: 0px 5px black;
 }
@@ -648,47 +650,28 @@ body {
     box-shadow: none;
 }
 
-.illustration_wrapper {
-    float: left;
-    height: 100px;
-    line-height: 100px;
+.illustration_wrapper, .cv_wrapper {
+    height: 50px;
+    line-height: 50px;
     border: 0.5px solid #fdd35c;
     border-radius: 8px;
     background-color: #001e43;
 }
-.illustration_wrapper p {
-    width: 540px;
+.illustration_wrapper p, .cv_wrapper p {
     color: #fdd35c;
-    float: left;
     text-decoration: underline;
-    text-align: center;
-}
-
-.cv_wrapper {
-    float: right;
-    height: 100px;
-    line-height: 100px;
-    border: 0.5px solid #fdd35c;
-    border-radius: 15px;
-    background-color: #001e43;
-}
-
-.cv_wrapper p {
-    width: 540px;
-    color: #fdd35c;
-    float: left;
-    text-decoration: underline;
-    text-align: center;
 }
 
 .stratagem_wrapper {
+    width: 650px;
     height: auto;
     background-color: #f8f4e6;
     padding-bottom: 15px;
+    margin: 0 auto;
 }
 
 .stratagem_name {
-    font-size: 60px;
+    font-size: 2rem;
     background-color: #f8f4e6;
     padding-top: 30px;
     margin-top: 15px;
@@ -696,9 +679,9 @@ body {
 }
 
 .stratagem_area {
-    width: 1000px;
+    width: 95%;
     background-color: #ffedab;
-    font-size: 35px;
+    font-size: 1.25rem;
     margin: 0 auto;
     border: 0.5px solid #9fa09e;
     border-radius: 15px;
@@ -719,7 +702,7 @@ body {
 .stratagem_explanation_wrapper p {
     float: left;
     text-align: left;
-    font-size: 35px;
+    font-size: 1.25rem;
 }
 
 .stratagem_kinds {
@@ -733,8 +716,8 @@ body {
 
 
 .illustration_header, .cv_header{
-    width: 920px;
-    height: 100px;
+    width: 350px;
+    height: 65px;
     background-color:rgba(255,255,255,0.3);
     text-align: center;
     margin: 0 auto;
@@ -744,18 +727,15 @@ body {
 }
 
 .illustrator_header_name, .cv_header_name {
-    height: 100px;
-    width: 840px;
-    font-size: 60px;
+    height: 100%;
+    font-size: 2rem;
     text-align: center;
-    line-height: 100px;
     padding: 0;
     margin: 0 auto;
     color: white;
-}
-
-.cv_close {
-    margin-right:5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .top_deck_list_none {
@@ -823,7 +803,7 @@ body {
 }
 
 .top_deck_list_wrapper {
-    width: 100%;
+    width: 650px;
     height: 110px;
     margin: 0 auto;
     margin-bottom: 15px;
@@ -2082,6 +2062,8 @@ button[name="super_rare"] {
 }
 
 .user_wrapper {
+    width: 650px;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -2122,6 +2104,7 @@ button[name="super_rare"] {
     border-radius: 10px;
     transition: all 0.5s;
     box-shadow: 0px 5px rgb(143, 138, 138);
+    margin-top: 50px;
 }
 
 .remove_top:hover {
